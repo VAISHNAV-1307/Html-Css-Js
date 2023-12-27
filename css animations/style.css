@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    background-color: black;
+    left: 0;
+
+
+}
+
+h1:hover::after {
+    animation-name: lineAnime;
+    animation-duration: 2s;
+}
+
+/* 
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+
+
+} */
+
+/* @keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 60%;
+    }
+} */
+
+/* @keyframes anime {
+    from{
+        left: 0;
+        background-color: lightseagreen;
+        top: 0;
+    }
+    to{
+        left: 70%;
+        background-color: salmon;
+        top: 0%;
+    }
+} */
+
+/* @keyframes anime {
+    0% {
+        left: 0;
+        background-color: lightseagreen;
+        top: 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        left: 75%;
+        background-color: lightgreen;
+        top: 0;
+        rotate: 360deg;
+    }
+
+    100% {
+        left: 75%;
+        background-color: salmon;
+        top: 40%;
+        rotate: 360deg;
+    }
+} */
+
+@keyframes lineAnime {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
